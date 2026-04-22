@@ -1,0 +1,123 @@
+.page {
+  min-height: 100vh;
+  background: black;
+  color: white;
+  font-family: sans-serif;
+  padding: 5vh 4vw;
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.page h1 {
+  font-size: calc(26px + 0.8vw);
+  font-weight: 700;
+  margin-bottom: 3vh;
+  color: white;
+}
+
+.page h2 {
+  font-size: calc(10px + 0.3vw);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: mediumseagreen;
+  margin-bottom: 2vh;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vh;
+  margin-bottom: 4vh;
+  background: darkslategray;
+  border: 1px solid dimgray;
+  border-radius: 10px;
+  padding: 3vh 3vw;
+}
+
+.input,
+.textarea {
+  width: 90%;
+  padding: 1.2vh 1.5vw;
+  background: black;
+  border: 1px solid dimgray;
+  border-radius: 6px;
+  color: white;
+  font-size: calc(14px + 0.2vw);
+  font-family: inherit;
+  resize: none;
+}
+
+.input::placeholder,
+.textarea::placeholder {
+  color: gray;
+}
+
+.input:focus,
+.textarea:focus {
+  outline: none;
+  border-color: mediumseagreen;
+}
+
+.btn {
+  align-self: flex-start;
+  padding: 1.2vh 2.5vw;
+  background: mediumseagreen;
+  color: black;
+  border: none;
+  border-radius: 6px;
+  font-size: calc(14px + 0.2vw);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn:hover:not(:disabled) {
+  background: seagreen;
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.error {
+  color: tomato;
+  font-size: calc(12px + 0.15vw);
+}
+
+.postList {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+
+.postCard {
+  background: darkslategray;
+  border: 1px solid dimgray;
+  border-left: 4px solid mediumseagreen;
+  border-radius: 8px;
+  padding: 2.5vh 2.5vw;
+}
+
+.postCard h3 {
+  font-size: calc(16px + 0.2vw);
+  color: white;
+  margin-bottom: 1vh;
+}
+
+.postCard p {
+  font-size: calc(14px + 0.15vw);
+  color: silver;
+  line-height: 1.6;
+  margin-bottom: 1.5vh;
+}
+
+.postCard small {
+  font-size: calc(11px + 0.1vw);
+  color: gray;
+}
+
+.page > p {
+  color: gray;
+  font-size: calc(14px + 0.2vw);
+}
